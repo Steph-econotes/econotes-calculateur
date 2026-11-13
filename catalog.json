@@ -1,0 +1,377 @@
+[
+ {
+  "ref": "A5PM30",
+  "nom": "Carnet A5 Premium 30 pages",
+  "type": "Premium",
+  "desc": "Carnet réutilisable 146 x 207mm, 30 pages\nCouverture Premium indéformable épaisseur 540µ \nPelliculage soft touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   12.62,
+   11.63,
+   11.02,
+   10.15,
+   9.29,
+   8.31,
+   7.69
+  ],
+  "pvc": [
+   18.93,
+   17.445,
+   16.53,
+   15.225,
+   13.935,
+   12.465,
+   11.535
+  ]
+ },
+ {
+  "ref": "A5PM60",
+  "nom": "Carnet A5 Premium 60 pages",
+  "type": "Premium",
+  "desc": "Carnet réutilisable 146 x 207mm, 60 pages\nCouverture Premium indéformable épaisseur 540µ \nPelliculage soft touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   14.15,
+   13.05,
+   12.35,
+   11.38,
+   10.42,
+   9.31,
+   8.62
+  ],
+  "pvc": [
+   21.225,
+   19.575,
+   18.525,
+   17.07,
+   15.63,
+   13.965,
+   12.93
+  ]
+ },
+ {
+  "ref": "A5CST30",
+  "nom": "Carnet A5 carton soft touch 30 pages",
+  "type": "Medium",
+  "desc": "Carnet réutilisable 146 x 207mm, 30 pages\nCouverture en carton PEFC épaisseur 350 g\nPellicullage Soft Touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   11.46,
+   10.57,
+   10.01,
+   9.23,
+   8.45,
+   7.56,
+   7.0
+  ],
+  "pvc": [
+   17.19,
+   15.855,
+   15.015,
+   13.845,
+   12.675,
+   11.34,
+   10.5
+  ]
+ },
+ {
+  "ref": "A5CST60",
+  "nom": "Carnet A5 carton soft touch 60 pages",
+  "type": "Medium",
+  "desc": "Carnet réutilisable 146 x 207mm, 60 pages\nCouverture en carton PEFC épaisseur 350 g\nPellicullage Soft Touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   13.0,
+   11.98,
+   11.35,
+   10.46,
+   9.57,
+   8.56,
+   7.92
+  ],
+  "pvc": [
+   19.5,
+   17.97,
+   17.025,
+   15.69,
+   14.355,
+   12.84,
+   11.88
+  ]
+ },
+ {
+  "ref": "A5C30",
+  "nom": "Carnet A5 carton 30 pages",
+  "type": "Goodies",
+  "desc": "Carnet réutilisable 146 x 207mm, 30 pages\nCouverture en carton PEFC épaisseur 350 g",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   10.0,
+   9.2,
+   8.7,
+   8.0,
+   7.3,
+   6.5,
+   6.0
+  ],
+  "pvc": [
+   13.5,
+   12.42,
+   11.745,
+   10.8,
+   9.855,
+   8.775,
+   8.1
+  ]
+ },
+ {
+  "ref": "A5C60",
+  "nom": "Carnet A5 carton 60 pages",
+  "type": "Goodies",
+  "desc": "Carnet réutilisable 146 x 207mm, 60 pages\nCouverture en carton PEFC épaisseur 350 g",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   11.54,
+   10.62,
+   10.04,
+   9.23,
+   8.42,
+   7.5,
+   6.92
+  ],
+  "pvc": [
+   15.579,
+   14.337,
+   13.554,
+   12.4605,
+   11.367,
+   10.125,
+   9.342
+  ]
+ },
+ {
+  "ref": "STICKIT10",
+  "nom": "Sticky notes pack de 10",
+  "type": "Premium",
+  "desc": "Notes repositionnables et réutilisables 7x7 cm, en lot de 10\nPolypropylène waterproof et recyclable",
+  "marquage": "Quadri bandeau et pose d'un logo",
+  "achat": [
+   9.99,
+   8.91,
+   7.21,
+   6.49,
+   6.16,
+   5.85,
+   5.74
+  ],
+  "pvc": [
+   13.4865,
+   12.0285,
+   9.7335,
+   8.7615,
+   8.316,
+   7.8975,
+   7.749
+  ]
+ },
+ {
+  "ref": "A4PM",
+  "nom": "Cahier A4 premium",
+  "type": "Premium",
+  "desc": "Cahier réutilisable 208 x 293 mm, 48 pages\nCouverture Premium indéformable épaisseur 540µ \nPelliculage soft touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   15.81,
+   14.57,
+   13.79,
+   12.71,
+   11.62,
+   11.31,
+   10.38
+  ],
+  "pvc": [
+   23.715,
+   21.855,
+   20.685,
+   19.065,
+   17.43,
+   16.965,
+   15.57
+  ]
+ },
+ {
+  "ref": "A4CST",
+  "nom": "Cahier A4 carton soft touch",
+  "type": "Medium",
+  "desc": "Cahier réutilisable 208 x 293mm, 48 pages\nCouverture en carton PEFC épaisseur 350 g\nPellicullage Soft Touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   14.65,
+   13.51,
+   12.79,
+   11.78,
+   10.78,
+   10.49,
+   9.63
+  ],
+  "pvc": [
+   21.975,
+   20.265,
+   19.185,
+   17.67,
+   16.17,
+   15.735,
+   14.445
+  ]
+ },
+ {
+  "ref": "A5AGD",
+  "nom": "Agenda A5 Premium",
+  "type": "Premium",
+  "desc": "Agenda réutilisable 146 x 207mm, 146 pages\nCouverture Premium indéformable épaisseur 540µ \nPelliculage soft touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   17.23,
+   15.88,
+   15.03,
+   13.85,
+   12.66,
+   11.31,
+   10.46
+  ],
+  "pvc": [
+   23.2605,
+   21.438,
+   20.2905,
+   18.6975,
+   17.091,
+   15.2685,
+   14.121
+  ]
+ },
+ {
+  "ref": "A6CST",
+  "nom": "Bloc-note A6 carton soft touch",
+  "type": "Goodies",
+  "desc": "Bloc-note réutilisable 102 x 145mm, 48 pages\nCouverture en carton PEFC épaisseur 350 g\nPellicullage Soft Touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   8.38,
+   7.71,
+   7.29,
+   6.71,
+   6.12,
+   5.95,
+   5.45
+  ],
+  "pvc": [
+   11.313,
+   10.4085,
+   9.8415,
+   9.0585,
+   8.262,
+   8.0325,
+   7.3575
+  ]
+ },
+ {
+  "ref": "A6C",
+  "nom": "Bloc-note A6 carton",
+  "type": "Goodies",
+  "desc": "Bloc-note réutilisable 102 x 145mm, 48 pages\nCouverture en carton PEFC épaisseur 350 g",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   8.0,
+   7.36,
+   6.96,
+   6.4,
+   5.84,
+   5.68,
+   5.2
+  ],
+  "pvc": [
+   10.8,
+   9.936,
+   9.396,
+   8.64,
+   7.884,
+   7.668,
+   7.02
+  ]
+ },
+ {
+  "ref": "A7CST",
+  "nom": "Bloc-note A7 carton soft touch",
+  "type": "Goodies",
+  "desc": "Bloc-note réutilisable 73 x 103mm, 48 pages\nCouverture en carton PEFC épaisseur 350 g\nPellicullage Soft Touch Recto Verso",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   7.38,
+   6.71,
+   6.29,
+   5.71,
+   5.12,
+   4.95,
+   4.45
+  ],
+  "pvc": [
+   9.963,
+   9.0585,
+   8.4915,
+   7.7085,
+   6.912,
+   6.6825,
+   6.0075
+  ]
+ },
+ {
+  "ref": "A7C",
+  "nom": "Bloc-note A7 carton",
+  "type": "Goodies",
+  "desc": "Bloc-note réutilisable 73 x 103mm, 48 pages\nCouverture en carton PEFC épaisseur 350 g",
+  "marquage": "Quadri all-over couverture avant et arrière recto/verso",
+  "achat": [
+   7.0,
+   6.36,
+   5.96,
+   5.4,
+   4.84,
+   4.68,
+   4.2
+  ],
+  "pvc": [
+   9.45,
+   8.586,
+   8.046,
+   7.29,
+   6.534,
+   6.318,
+   5.67
+  ]
+ },
+ {
+  "ref": "PLANNERG",
+  "nom": "Planner",
+  "type": "Goodies",
+  "desc": "Planner A4 210 x 297mm\nPolypropylène waterproof et recyclable",
+  "marquage": "Pose du logo, personnalisation quadri du template, communication quadri au verso",
+  "achat": [
+   2.84,
+   2.28,
+   2.21,
+   2.07,
+   1.85,
+   "-",
+   "-"
+  ],
+  "pvc": [
+   3.834,
+   3.078,
+   2.9835,
+   2.7945,
+   2.4975,
+   "-",
+   "-"
+  ]
+ }
+]

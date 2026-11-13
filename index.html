@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculateur econotes · configurez votre carnet</title>
+<meta name="description" content="Choisissez votre produit, votre couverture, vos options et votre quantité, le prix se calcule instantanément. Papeterie réutilisable fabriquée en France.">
+<meta name="theme-color" content="#F7F3EA">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="mark">e</span> econotes <span class="tagline">calculateur</span></div>
+    <div class="badge" id="modeBadge">Prix HT</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro">
+    <h1>Votre carnet en trois choix.</h1>
+    <p>Produit, couverture, quantité. Le prix s'affiche en direct, personnalisation et accessoires compris.</p>
+  </section>
+
+  <section class="step" data-step="1">
+    <div class="step-head"><span class="num">1</span><h2>Votre produit</h2></div>
+    <div class="chips" id="produits" role="group" aria-label="Choix du produit"></div>
+  </section>
+
+  <section class="step" data-step="2">
+    <div class="step-head"><span class="num">2</span><h2>Votre couverture</h2></div>
+    <div class="covers" id="couvertures" role="group" aria-label="Choix de la couverture"></div>
+  </section>
+
+  <section class="step" data-step="3">
+    <div class="step-head"><span class="num">3</span><h2>Vos options</h2></div>
+    <div id="options"></div>
+  </section>
+
+  <section class="step" data-step="4">
+    <div class="step-head"><span class="num">4</span><h2>Votre quantité</h2></div>
+    <div class="row-qte">
+      <button class="qte-btn" id="moins" type="button" aria-label="Diminuer la quantité">−</button>
+      <input id="qte" type="number" inputmode="numeric" min="25" step="25" value="100" aria-label="Quantité">
+      <button class="qte-btn" id="plus" type="button" aria-label="Augmenter la quantité">+</button>
+    </div>
+    <div class="chips small" id="paliers" role="group" aria-label="Quantités rapides"></div>
+    <p class="hint" id="hintQte">Les prix baissent par palier de quantité.</p>
+  </section>
+
+  <section class="recap" aria-live="polite">
+    <div class="recap-line">
+      <span>Prix unitaire HT</span>
+      <strong id="unit">12,35 €</strong>
+    </div>
+    <div class="recap-line total">
+      <span>Total livré HT <span id="qteLabel">pour 100 pièces</span></span>
+      <strong id="total">1 235,00 €</strong>
+    </div>
+    <p class="frais" id="frais" hidden></p>
+    <p class="port" id="port"></p>
+
+    <div class="remise">
+      <label for="remise">Remise accordée</label>
+      <div class="remise-input">
+        <input id="remise" type="number" min="0" max="60" step="1" value="0" inputmode="numeric" aria-label="Remise en pourcentage">
+        <span>%</span>
+      </div>
+    </div>
+
+    <ul class="inclus">
+      <li>Accessoires inclus : stylo noir, porte-stylo, spray 3 mL et lingette.</li>
+      <li>Pochette en coton recyclé, ou pochette kraft selon la couverture.</li>
+      <li>Personnalisation quadri all-over sur les 4 faces de la couverture, avant et arrière recto-verso.</li>
+    </ul>
+
+    <p class="note">Prix HT. Fabrication française, 5 jours ouvrés après validation du BAT.</p>
+    <a class="cta" id="cta" href="mailto:stephen@econotes.co">Demander ce devis</a>
+  </section>
+
+
+  <footer>
+    <p>econotes · papeterie réutilisable fabriquée en France · SAS Sphèréco</p>
+    <p class="hint">Prix indicatifs HT, susceptibles d'évoluer. Le devis signé fait foi.</p>
+  </footer>
+
+</main>
+
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
