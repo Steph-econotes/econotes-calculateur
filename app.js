@@ -29,7 +29,7 @@ const euros = (v) => new Intl.NumberFormat("fr-FR", {
 }).format(v) + " €";
 
 const params = new URLSearchParams(location.search);
-const modeRevendeur = params.get("m") === "rev";
+const modeConseille = params.get("m") === "pvc";
 const QTE_MIN = 10;
 
 const premierProduit = PRODUCTS[0];
@@ -102,8 +102,9 @@ function dessinerCouvertures() {
     b.innerHTML =
       '<div class="name"><span class="dot"></span>' + meta.nom + "</div>" +
       '<div class="desc">' + meta.desc + "</div>" +
-      '<div class="from">' + (r ? euros(r.unitConseille) : "sur devis") +
-      ' <span>l\'unité</span></div>';
+      '<div class="from"><b>' + (r ? euros(modeConseille ? r.unitConseille : r.unitAchat) : "sur devis") +
+      '</b> <span>l\'unité</span></div>';
+    b.dataset.cle = cle;
     b.addEventListener("click", () => {
       const dispo = Object.keys(produitCourant().variants[cle]);
       etat.couverture = cle;
@@ -113,6 +114,18 @@ function dessinerCouvertures() {
       majRecap();
     });
     zone.appendChild(b);
+  });
+}
+
+function majPrixCartes() {
+  document.querySelectorAll(".cover").forEach((b) => {
+    const cle = b.dataset.cle;
+    if (!cle) return;
+    const dispo = Object.keys(produitCourant().variants[cle]);
+    const pagesRef = dispo.indexOf(String(etat.pages)) >= 0 ? etat.pages : dispo[0];
+    const r = prix({ couverture: cle, pages: pagesRef });
+    const cible = b.querySelector(".from b");
+    if (cible) cible.textContent = r ? euros(modeConseille ? r.unitConseille : r.unitAchat) : "sur devis";
   });
 }
 
@@ -221,15 +234,15 @@ function majRecap() {
   const taux = Math.max(0, Math.min(60, etat.remise)) / 100;
   const arrondi = (v) => Math.round(v * 100) / 100;
 
-  const baseUnit = modeRevendeur ? r.unitAchat : r.unitConseille;
+  const baseUnit = modeConseille ? r.unitConseille : r.unitAchat;
   const unit = arrondi(baseUnit * (1 - taux));
   const port = r.qte < 25 ? 9.9 : 0;
   const total = arrondi(unit * r.qte + r.frais + port);
 
-  document.getElementById("modeBadge").textContent = modeRevendeur ? "Prix d'achat HT" : "Prix HT";
-  document.getElementById("notePrix").textContent = (modeRevendeur
-    ? "Prix d'achat revendeur HT, issus de la grille revendeur econotes 2026."
-    : "Prix conseillés HT, issus de la grille revendeur econotes 2026.")
+  document.getElementById("modeBadge").textContent = modeConseille ? "Prix conseillés" : "Prix HT";
+  document.getElementById("notePrix").textContent = (modeConseille
+    ? "Prix de vente conseillés HT, grille revendeur econotes 2026."
+    : "Prix unitaires HT de la grille revendeur econotes 2026, base de la commande.")
     + " Fabrication française, 5 jours ouvrés après validation du BAT.";
   document.getElementById("unit").textContent = euros(unit);
   document.getElementById("total").textContent = euros(total);
@@ -242,6 +255,8 @@ function majRecap() {
   } else {
     frais.hidden = true;
   }
+
+  majPrixCartes();
 
   const portEl = document.getElementById("port");
   portEl.textContent = port
