@@ -227,6 +227,10 @@ function majRecap() {
   const total = arrondi(unit * r.qte + r.frais + port);
 
   document.getElementById("modeBadge").textContent = modeRevendeur ? "Prix d'achat HT" : "Prix HT";
+  document.getElementById("notePrix").textContent = (modeRevendeur
+    ? "Prix d'achat revendeur HT, issus de la grille revendeur econotes 2026."
+    : "Prix conseillés HT, issus de la grille revendeur econotes 2026.")
+    + " Fabrication française, 5 jours ouvrés après validation du BAT.";
   document.getElementById("unit").textContent = euros(unit);
   document.getElementById("total").textContent = euros(total);
   document.getElementById("qteLabel").textContent = "pour " + r.qte.toLocaleString("fr-FR") + " pièces";
