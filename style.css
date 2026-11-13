@@ -126,11 +126,23 @@ h2 { font-size: 15px; margin: 0; font-weight: 650; letter-spacing: -0.01em; }
   margin: 22px 0 8px; padding: 18px;
   background: var(--ink); color: #fff; border-radius: 20px;
 }
-.recap-line { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.recap-line {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 10px; flex-wrap: wrap; min-width: 0;
+}
 .recap-line span { font-size: 13.5px; color: #cfc9bd; }
-.recap-line strong { font-size: 22px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.recap-line strong {
+  font-size: 22px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em;
+  white-space: nowrap; margin-left: auto;
+}
 .recap-line.total { margin-top: 10px; padding-top: 12px; border-top: 1px solid #34363a; }
 .recap-line.total strong { font-size: 30px; }
+
+@media (max-width: 430px) {
+  .recap-line { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .recap-line strong { font-size: 26px; margin-left: 0; }
+  .recap-line.total strong { font-size: 34px; }
+}
 .frais { margin: 10px 0 0; font-size: 12.5px; color: #f0b9a6; }
 .port { margin: 4px 0 0; font-size: 12.5px; color: #9fd3b4; }
 
